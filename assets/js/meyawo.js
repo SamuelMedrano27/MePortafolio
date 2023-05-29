@@ -36,3 +36,17 @@ $('#nav-toggle').click(function(){
     $(this).toggleClass('is-active')
     $('ul.nav').toggleClass('show');
 });
+function openCard(event, modalId) {
+    event.preventDefault();
+    var modalCard = document.getElementById(modalId);
+    var modalOverlay = document.querySelector('.modal-overlay');
+    modalCard.style.display = 'block';
+    modalOverlay.style.display = 'block';
+}
+
+function closeCard(modalId) {
+    var modalCard = document.getElementById(modalId);
+    var modalOverlay = document.querySelector('.modal-overlay');
+    modalCard.style.display = 'none';
+    modalOverlay.style.display = 'none';
+}

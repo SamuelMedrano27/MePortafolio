@@ -50,6 +50,11 @@
   box-sizing: border-box;
 }
 
+.white-text {
+        color: white;
+       }
+            
+              
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -2769,6 +2774,19 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
+.btn-primary1 {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #b6aae4;
+}
+
+.btn-primary1:hover {
+  color: #000000;
+  background-color: #aaa2c7;
+  border-color: #544885;
+}
+
+
 
 .btn-primary {
   color: #fff;
@@ -11417,9 +11435,10 @@ p {
   border-radius: 0 0 0 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
+
 
 .blog-card-body {
   padding: 30px 20px 30px 30px;
@@ -12231,4 +12250,41 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+
+.modal-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+.modal-card-content {
+  overflow-y: auto; /* Mostrar scrollbar solo cuando sea necesario */
+  max-height: 500px; /* Altura máxima del contenido antes de que aparezca el scrollbar */
 }
