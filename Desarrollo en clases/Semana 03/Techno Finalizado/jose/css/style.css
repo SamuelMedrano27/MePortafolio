@@ -1,0 +1,138 @@
+body {
+	background-color: #F4F7FC;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* font-weight: 700; */
+
+}
+
+
+
+.space {
+    display: inline;
+    padding-right: 2%;
+}
+
+.icons{
+    display: inline;
+    padding-right: 1%;
+}
+
+.menu {
+    max-height: 300px;
+}
+
+.logo {
+    float: left;
+    margin-left: 250px;
+    width: 10%;
+    height: 10%;
+}
+
+.maquina1{
+    margin-left: 11em;
+}
+
+.card3 {
+    background-color: #1135CB;
+}
+
+.card-title2 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.title1 {
+    font-size: 50px;
+    color: white;
+}
+
+.title2 {
+    font-size: 20px;
+    color: white;
+    line-height: 0.6;
+    margin-top: 5%;
+}
+
+.dis_title{
+    margin-left:15%;
+}
+
+.box1{
+    color: #33BAFF;
+}
+
+.footer1 {
+    background-color: #000040;
+    padding: 40px 0;
+}
+
+.colum11 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+}
+
+.ul1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li11 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+}
+
+.iconfoot1 {
+    font-size: 20px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.logo1 {
+    float: top;
+    margin-left: 10px;
+    width: 9em;
+    height: 2em;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+    .logo1 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.facebook-box {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #187DFF;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+.facebook-box i {
+    color: white;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.arrow11{
+    margin-right: 0.4em;
+}
+
+.image-container11 {
+    display: flex;
+    align-items: center;
+}
+
+.description11 {
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}

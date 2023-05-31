@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/muli.ttf') format('truetype');
+}
+
+body {
+  background-color: #FEFEFF;
+  
+}
+
+.custom_card4{
+  filter: drop-shadow(0 0 20px rgba(170,192,228,0.3));
+}
+
+.style_icon4 {
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 100%;
+  background: #D4E4FF;
+  font-size: 12px;
+  margin: 0 0 8px;
+}
+
+.animation_up4{
+  transition: transform 1s;
+}
+
+.animation_up4:hover {
+  transform: translateY(-10px);
+}
+
+.animation_up4 figure{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.animation_up4 figure img{
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+  object-fit: contain;
+}
+
+.animation_up4 figure .capa {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(4,96,248,0.6) 0%, rgba(4,96,248,0.6) 50%, transparent 50%, transparent 100%);
+  transition: all .6s ease-out;
+  z-index: 1;
+}
+
+.animation_up4:hover .capa {
+  width: 100%;
+}
+
+.animation_up4 figure .capa2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(4,96,248,0.6) 0%, rgba(4,96,248,0.6) 50%, transparent 50%, transparent 100%);
+  transition: all .6s ease-out;
+  z-index: 1;
+}
+
+.animation_up4:hover .capa2 {
+  width: 100%;
+}
+
+.container_client_testimonial4{
+  height: fit-content;
+  background-image: url("../img/bg_client_testimonial.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container_client_testimonial4 img{
+  width: auto;
+  max-width: 100%;
+}
+
+.container_client_testimonial4 h6{
+  background-color: rgba(255,255,255,0.14901960784313725);
+}
+
+.custom_carousel{
+  position: relative;
+}
+
+
+.custom_carousel_buttons {
+  right: 19px;
+  bottom: 17px;
+  justify-content: end;
+  margin-right: 10%;
+}
+
+.custom_carousel_buttons button {
+  background-color: white !important;
+  background-clip: inherit !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 30px !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  opacity: 0.75 !important;
+  margin-right: 1.5px !important;
+  margin-left: 1.5px !important;
+}
+
+.custom_carousel_buttons .active {
+  opacity: 1 !important;
+  background-color: #FE6B35 !important;
+}
+
+@media (max-width: 1140px) {
+  .custom_carousel_buttons {
+    right: -12px;
+    margin-right: 10%;
+  }
+}

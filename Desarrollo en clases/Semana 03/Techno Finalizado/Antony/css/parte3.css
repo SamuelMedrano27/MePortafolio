@@ -1,0 +1,183 @@
+.card-title13 {
+    font-size: 16px; /* Tamaño de letra personalizado */
+    color: #4B85E4;
+}
+.titulo13{
+    font-size: 42px;
+}
+.colortext13 {
+    /* Tamaño de letra personalizado */
+   color: #4B85E4;
+}
+.card13{
+    margin: 10px,
+}
+.card-body{
+margin-bottom: 10px;
+
+
+}
+.fondo13{
+   
+    background-image: url(../img/background.png);
+    padding: 97px 10rem 160px ;
+    background-size: cover;
+    
+}
+.cuadro13{
+    text-align: center;
+
+}
+
+.cuadro113{
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    margin: 0 0 23px;
+    filter: drop-shadow(0px 5px 15px rgba(152,179,223,0.2));
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 17px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #0c5adb;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.cuadro123{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.cuadro133{
+    width: 57%;
+    margin: 13px auto 13px;
+    font-size: 16px;
+    padding: 0 0 0 18px;
+    line-height: 28px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.section213{
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.cuadroanidado213{
+    background-color: #ffffff;
+    margin: 0px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.cuadrointerior213{
+    padding: 17px 32px 13px;
+
+    height: 200px;
+    
+}
+
+.icon213{
+   
+    width: 20px;    
+    height: 20px;
+}
+.flecha113{
+    
+    margin-left: 5px ;
+    width: 12px;    
+    height: 12px;
+}
+
+.cuadro2213{
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-size: 15px;
+    
+    color: #0c5adb;
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+}
+.cuadro3213{
+    margin-top: 30px;
+    box-sizing: border-box;
+  
+    
+}
+.referencia1213{
+    margin: 0 0 10px;
+    margin-top: 70px;;
+    position: relative;
+    padding: 15px 32px 21px;
+    border-top: 1px solid rgba(35,35,35,0.07058823529411765);
+   
+    
+}
+  
+  .cuadroanidado213:hover > * {
+    color: #ffffff;
+  }
+ 
+
+.cuadroanidado213 {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .cuadroanidado213::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/FondoAzul.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    z-index: 1; /* Cambia el valor a 1 o mayor */
+  }
+  .cuadroanidado213:hover::before {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  .cuadrointerior213 {
+    position: relative;
+    z-index: 1;
+  }
+  .referencia1213 {
+    position: relative;
+    z-index: 1;
+  }
+  .cuadroanidado213:hover .cuadro2213,
+  .cuadroanidado213:hover .referencia1213,
+  .cuadroanidado213:hover a {
+    color: #ffffff;
+    transition: color 0.5s ease;
+  }
+  .cuadroanidado213 {
+    /* Otros estilos... */
+    transition: transform 0.3s ease; /* Agrega esta línea para incluir la propiedad en la transición */
+}
+
+.cuadroanidado213:hover {
+    transform: translate(5px, -5px); /* Agrega esta línea para aplicar la transformación en hover */
+}
+
+  
+ 
+ 
+  
+  
+  
+  
+  

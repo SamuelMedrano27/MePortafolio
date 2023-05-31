@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelota rebotando en cuadrado</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            width: 500px;
+            height: 200px;
+            background-color: #000;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bouncingball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #5A95E1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: bounce 1s ease-in-out infinite;
+        }
+        .boton1{
+            margin-left: 14%;
+            
+        }
+        .boton{
+            background-color: #5A95E1;
+            color: white;
+            border-radius: 5px;
+            margin-top: 2%;
+           
+            
+        }
+        @keyframes bounce {
+            0% {
+                left: 0%;
+                animation-timing-function: ease-in;
+            }
+            40% {
+                left: 20%;
+                animation-timing-function: ease-in;
+            }
+            55% {
+                left: 40%;
+                
+                animation-timing-function: ease-in;
+            }
+            65% {
+                left:60%;
+                
+                animation-timing-function: ease-in;
+            }
+            95% {
+                left: 80%;
+                animation-timing-function: ease-in;
+            }
+            100% {
+                left: 100%;
+                animation-timing-function: ease-in;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="bouncingball"></div>
+        <button id="resume-btn" class="boton boton1">Reanudar</button>
+        <button id="pause-btn" class="boton">Pausar</button>
+        <button id="reverse-btn" class="boton">Cambiar de dirección</button>
+        <button id="reset-btn" class="boton">Reiniciar</button>
+        <hr>
+    </div>
+ 
+</body>
+<script>
+     const resumeBtn = document.querySelector('#resume-btn');
+const pauseBtn = document.querySelector('#pause-btn');
+const reverseBtn = document.querySelector('#reverse-btn');
+const resetBtn = document.querySelector('#reset-btn');
+let isPaused = false;
+let isReversed = false;
+let ball = document.querySelector('.bouncingball');
+
+function pauseBall() {
+  ball.style.animationPlayState = 'paused';
+  isPaused = true;
+}
+
+function resumeBall() {
+  ball.style.animationPlayState = 'running';
+  isPaused = false;
+}
+
+function reverseBall() {
+  if (!isReversed) {
+    ball.style.animationDirection = 'reverse';
+    isReversed = true;
+  } else {
+    ball.style.animationDirection = 'normal';
+    isReversed = false;
+  }
+}
+
+function resetBall() {
+  ball.parentNode.removeChild(ball);
+  const newBall = document.createElement('div');
+  newBall.classList.add('bouncingball');
+  document.querySelector('.container').appendChild(newBall);
+  ball = newBall;
+}
+
+pauseBtn.addEventListener('click', pauseBall);
+resumeBtn.addEventListener('click', resumeBall);
+reverseBtn.addEventListener('click', reverseBall);
+resetBtn.addEventListener('click', resetBall);
+
+</script>
+</html>

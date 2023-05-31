@@ -1,0 +1,38 @@
+[
+    {
+      "nombre": "Bicicleta",
+      "descripcion": "Vehículo de dos ruedas movido por pedales.",
+      "precio": 400.00,
+      "foto": "./bici.jpg"
+    },
+    {
+      "nombre": "Aro",
+      "descripcion": "Componente circular de la rueda de una bicicleta que sujeta el neumático",
+      "precio": 35.00,
+      "foto": "./aro.jpg"
+    },
+    {
+      "nombre": "Llanta",
+      "descripcion": "Parte de la rueda que se une al aro y soporta el neumático.",
+      "precio": 25.00,
+      "foto": "./llanta26.jpg"
+    },
+    {
+      "nombre": "Pedal",
+      "descripcion": "Componente de la bicicleta que se usa para moverla, fijado a la biela y girado por el ciclista.",
+      "precio": 8.00,
+      "foto": "./pedal.jpg"
+    },
+    {
+      "nombre": "Freno",
+      "descripcion": "Dispositivo mecánico o hidráulico que se usa para detener la bicicleta",
+      "precio": 29.99,
+      "foto": "./frenocromado.jpg"
+    },
+    {
+      "nombre": "Cámara",
+      "descripcion": "Tubo interior de la bicicleta que se infla con aire y se coloca dentro del neumático.",
+      "precio": 12.75,
+      "foto": "./camara26.jpg"
+    }
+  ]

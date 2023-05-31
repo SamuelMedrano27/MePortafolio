@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Productos</title>
+    <meta charset="UTF-8">
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+      th {
+        background-color: #ccc;
+      }
+      img {
+  max-width: 20%;
+  height: auto;
+}
+
+    </style>
+  </head>
+  <body>
+    <table id="tabla-productos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Foto</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const url = './productos.json';
+
+      fetch(url)
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error("Error al obtener los datos");
+          }
+        })
+        .then(data => {
+          const tbody = document.querySelector("#tabla-productos tbody");
+          data.forEach(producto => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td>${producto.nombre}</td>
+              <td>${producto.descripcion}</td>
+              <td>${producto.precio}</td>
+              <td><img src="${producto.foto}" alt="${producto.nombre}"></td>
+            `;
+            tbody.appendChild(tr);
+          });
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    </script>
+  </body>
+</html>
